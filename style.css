@@ -9,7 +9,11 @@
     border-color: #4cf7db;
     color: #4cf7db;
 }
-.btn-outline-success:hover {
+.btn-outline-success:hover,
+.btn-outline-success:active,
+.btn-outline-success:focus,
+.btn-outline-success:not(:disabled):not(.disabled).active,
+.btn-outline-success:not(:disabled):not(.disabled):active{
     background-color: #4cf7db;
     color: white;
     border-color: #4cf7db;
