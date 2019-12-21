@@ -1,0 +1,16 @@
+.section { 
+    height: 100vh;
+    background-image: url("quark_planet.gif");
+    background-position: center;
+    background-size: cover;
+  }
+
+.btn-outline-success{
+    border-color: #4cf7db;
+    color: #4cf7db;
+}
+.btn-outline-success:hover {
+    background-color: #4cf7db;
+    color: white;
+    border-color: #4cf7db;
+}
