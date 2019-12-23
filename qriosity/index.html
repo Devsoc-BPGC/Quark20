@@ -9,9 +9,206 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <!-- Bootstrap core CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet">
+    <style>
+        .section-main { 
+            height: 100vh;
+            background-image: url('qriosity_main.jpeg') ;
+            background-position: center;
+            background-size: cover;
+        }
+        .section{
+            height: 100vh;
+            background-color: black;
+            color: #4cf7db;
+        }
+        .car-image{
+            height: 100vh;
+        }
+        .typewriter h3 {
+            overflow: hidden; /* Ensures the content is not revealed until the animation */
+            border-right: .15em solid orange; /* The typwriter cursor */
+            white-space: nowrap; /* Keeps the content on a single line */
+            margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+            letter-spacing: .15em; /* Adjust as needed */
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+
+            /* The typing effect */
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+            /* The typewriter cursor effect */
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: orange; }
+        }
+    </style>
+    <script type="text/Javascript">
+        var aText = new Array(
+            "Qriosity is a national level Aptitude test organized by the student fraternity of BITS PILANI K.K. Birla Goa Campus. Qriosity is conducted on two levels- level 1 for Classes 8-10 and level-2 for Classes 11 & 12. Qriosity tests logical reasoning and basic mathematics and provides a platform to build knowledge and ability to think out of the box.", 
+            "",
+            "The event is conducted in the month of July. Qriosity 2018 was conducted across 7 cities like Delhi, Pune, Gwalior, Vadodara, Noida, Ajmer etc. with over 1200+ participants. This year we plan to have it in more than 15 cities all across the nation."
+        );
+        var iSpeed = 100; // time delay of print out
+        var iIndex = 0; // start printing array at this posision
+        var iArrLength = aText[0].length; // the length of the text array
+        var iScrollAt = 20; // start scrolling up at this many lines
+        
+        var iTextPos = 0; // initialise text position
+        var sContents = ''; // initialise contents variable
+        var iRow; // initialise current row
+        
+        function typewriter()
+        {
+            sContents =  ' ';
+            iRow = Math.max(0, iIndex-iScrollAt);
+            var destination = document.getElementById("typedtext");
+            while ( iRow < iIndex ) {
+                sContents += aText[iRow++] + '<br />';
+            }
+            destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+            if ( iTextPos++ == iArrLength ) {
+                iTextPos = 0;
+                iIndex++;
+                if ( iIndex != aText.length ) {
+                    iArrLength = aText[iIndex].length;
+                    setTimeout("typewriter()", 500);
+                }
+            } else {
+                setTimeout("typewriter()", iSpeed);
+            }
+        }
+        window.onload = function(){
+            typewriter();
+        }
+  </script>
 </head>
 <body>
+    <!--home page-->
+    <div class="section-main">
+        <a href="#about-qriosity">
+            <div id="lead-down" class="text-center" style="color: white !important; position: absolute;
+            bottom: 0;width: 100%;">
+                <h1>Discover More</h1>
+                <span>
+                    <i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i>
+                </span>
+            </div>
+        </a>
+    </div>
+    <div class="section" id="about-qriosity" style="position: relative">
+        <div style="position: absolute; top:20%;">
+            <h4 class="px-4">
+                ABOUT QRIOSITY'19
+            </h4>
+            <small>
+            <div id="typedtext" class="px-3" style="margin-top: 2rem;max-width: 90%;">
+            </div></small>
+        </div>
+        <span style="position: absolute;right:0;bottom:0;" class="px-2 py-2">
+            <i class="fa fa-chevron-down fa-x" aria-hidden="true"></i>
+        </span>
+    </div>
+    <div class="section" id="india-map">
+        <img src="qriosity_india.jpeg" style="height: 100%; width:100%;">
+    </div>
+    <div class="section">
+        <div id="carouselExampleIndicators" style="height:100%;" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="12"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="13"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="14"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="15"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="16"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="17"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="18"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item car-image active">
+                <img class="d-block w-100" src="images/qriosity_collage_1.jpeg" alt="First slide">
+                </div>
+                <div class="carousel-item car-image">
+                <img class="d-block w-100" src="images/qriosity_collage_2.jpeg" alt="Second slide">
+                </div>
+                <div class="carousel-item car-image">
+                <img class="d-block w-100"src="images/qriosity_collage_3.jpeg" alt="Third slide">
+                </div>
+                <div class="carousel-item car-image">
+                <img class="d-block w-100" src="images/qriosity_collage_4.jpeg" alt="Second slide">
+                </div>
+                <div class="carousel-item car-image">
+                <img class="d-block w-100"src="images/qriosity_collage_5.jpeg" alt="Third slide">
+                </div>
+                <div class="carousel-item car-image">
+                <img class="d-block w-100" src="images/qriosity_collage_6.jpeg" alt="Second slide">
+                </div>
+                <div class="carousel-item car-image">
+                <img class="d-block w-100"src="images/qriosity_collage_7.jpeg" alt="Third slide">
+                </div>
+                <div class="carousel-item car-image">
+                <img class="d-block w-100" src="images/qriosity_collage_8.jpeg" alt="Second slide">
+                </div>
+                <div class="carousel-item car-image">
+                <img class="d-block w-100"src="images/qriosity_collage_9.jpeg" alt="Third slide">
+                </div>
+                <div class="carousel-item car-image">
+                <img class="d-block w-100" src="images/qriosity_collage_10.jpeg" alt="Second slide">
+                </div>
+                <div class="carousel-item car-image">
+                <img class="d-block w-100"src="images/qriosity_collage_11.jpeg" alt="Third slide">
+                </div>
+                <div class="carousel-item car-image">
+                <img class="d-block w-100" src="images/qriosity_collage_12.jpeg" alt="Second slide">
+                </div>
+                <div class="carousel-item car-image">
+                <img class="d-block w-100"src="images/qriosity_collage_13.jpeg" alt="Third slide">
+                </div>
+                <div class="carousel-item car-image">
+                <img class="d-block w-100" src="images/qriosity_collage_14.jpeg" alt="Second slide">
+                </div>
+                <div class="carousel-item car-image">
+                <img class="d-block w-100"src="images/qriosity_collage_15.jpeg" alt="Third slide">
+                </div>
+                <div class="carousel-item car-image">
+                <img class="d-block w-100" src="images/qriosity_collage_16.jpeg" alt="Second slide">
+                </div>
+                <div class="carousel-item car-image">
+                <img class="d-block w-100"src="images/qriosity_collage_17.jpeg" alt="Third slide">
+                </div>
+                <div class="carousel-item car-image">
+                <img class="d-block w-100" src="images/qriosity_collage_18.jpeg" alt="Second slide">
+                </div>
+                <div class="carousel-item car-image">
+                <img class="d-block w-100"src="images/qriosity_collage_19.jpeg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
     <footer class="page-footer text-center font-small mt-4 wow fadeIn">
         <hr class="my-4">
         <!-- Social icons -->
@@ -46,5 +243,7 @@
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
