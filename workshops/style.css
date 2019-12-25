@@ -15,7 +15,7 @@ body {
 	transform: translate(-50%, 5%);
 	padding: 2.5rem;
 	box-sizing: border-box;
-	background: rgba(0, 0, 0, .6);
+	background: rgba(200, 200, 200, .3);
 	border-radius: .625rem
 }
 .box h2 {
@@ -67,7 +67,7 @@ body {
 	border: none;
 	outline: 0;
 	color: #fff;
-	background-color: #00c3ff;
+	background-color: #298fca;
 	padding: .625rem 1.25rem;
 	cursor: pointer;
 	border-radius: .312rem;
@@ -143,7 +143,7 @@ canvas {
 	position: fixed;
 	width: 100%;
 	height: 100%;
-	background-color: #4cf7db;
+	background-color: #298fca;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 50%

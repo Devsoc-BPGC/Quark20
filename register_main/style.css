@@ -1,0 +1,14 @@
+.section{
+    background-color: black;
+    height: 100vh;
+}
+.dock-choices{
+    border-color: rgba(100, 244, 253, 0.8);
+    color: rgba(100, 244, 253, 0.8);
+    background-color: transparent;
+    border-width: 3px;
+    width: 75%;
+}
+.dock-choices:hover {
+    transform: scale(1.1);
+}

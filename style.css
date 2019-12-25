@@ -1,20 +1,22 @@
 .section { 
     height: 100vh;
-    background-image: url("quark_planet.gif");
+    background-image: url("https://i.giphy.com/media/MaThe6p8WAKbf9NDDM/source.gif");
     background-position: center;
     background-size: cover;
   }
 
-.btn-outline-success{
-    border-color: #4cf7db;
-    color: #4cf7db;
+.btn-outline-primary{
+    border-color: #298fca;
+    color: #298fca;
+    border-radius: 16px;
 }
-.btn-outline-success:hover,
-.btn-outline-success:active,
-.btn-outline-success:focus,
-.btn-outline-success:not(:disabled):not(.disabled).active,
-.btn-outline-success:not(:disabled):not(.disabled):active{
-    background-color: #4cf7db;
-    color: white;
-    border-color: #4cf7db;
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:focus,
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active{
+    background-color: #298fca;
+    color: black;
+    border-radius: 16px;
+    border-color: #298fca;
 }
