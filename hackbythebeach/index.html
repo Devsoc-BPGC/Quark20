@@ -874,13 +874,12 @@
     <style type="text/css">
       :focus {outline:none;}
       ::-moz-focus-inner {border:0;}
-
+      /* .body */
       body {
-        background-color: #6610f2;
+        background-color: #ffffed;
       }
 
       .content {
-        color: white;
         font-size: 70px;
         text-align: center;
         padding: 30px;
@@ -914,7 +913,7 @@
         background-color: #2954BF !important;
       }
 
-      .button1 {
+      .tech-btn {
         display: inline-block;
         /* height: 180px; */
         padding: 0;
@@ -924,82 +923,19 @@
         border-radius: 20px;
       }
 
-      .button4 {
-        display: inline-block;
-        /* height: 180px; */
-        padding: 0;
-        margin: 0;
-        vertical-align: top;
-        width: 180px;
-        border-radius: 20px;
+      .tech-btn:hover {
+        opacity: 0.5;
       }
 
-      .button2 {
-        display: inline-block;
-        /* height: 180px; */
-        padding: 0;
-        margin: 0;
-        vertical-align: top;
-        width: 180px;
-        border-radius: 20px;
-      }
-
-      .button3 {
-        display: inline-block;
-        /* height: 180px; */
-        padding: 0;
-        margin: 0;
-        vertical-align: top;
-        width: 180px;
-        border-radius: 20px;
-      }
-
-      #AI img {
+      .tech-img {
         display: block;
         height: 180px;
         width: 178px;
-        border-radius: 20px;
-      }
-
-      .button1:hover {
-        opacity: 0.5;
-      }
-
-      .button2:hover {
-        opacity: 0.5;
-      }
-
-      .button3:hover {
-        opacity: 0.5;
-      }
-
-      .button4:hover {
-        opacity: 0.5;
-      }
-
-      #FinTech img {
-        display: block;
-        height: 180px;
-        width: 178px;
-        border-radius: 23px;
-      }
-
-      #BlockChain img {
-        display: block;
-        height: 180px;
-        width: 178px;
-        border-radius: 20px;
-      }
-
-      #IoT img {
-        display: block;
-        height: 180px;
-        width: 180px;
         border-radius: 20px;
       }
 
       p {
-        color: white;
+        color: black;
         font-size: 20px;
       }
 
@@ -1039,7 +975,7 @@
 
 <body id="page-top">
   <div id="bg">
-    <img src="https://github.com/Rijul1999/BITSHack19/blob/master/Website/Images%20for%20website/code-2560x1024.jpg?raw=true"
+    <img src="./img/bg-img-1.jpg" width="100%"
       alt="Blockchain background" class="img-fluid" />
   </div>
 
@@ -1064,10 +1000,10 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" title="Technologies" href="#speakers">TECHNOLOGIES</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link js-scroll-trigger" title="Speakers and Judges" href="#speakersandjudges">SPEAKERS AND
               JUDGES</a>
-          </li>
+          </li> -->
           <!-- <li class="nav-item">
             <a class="nav-link js-scroll-trigger" title="Schedule" href="#schedule">SCHEDULE</a>
           </li> -->
@@ -1080,7 +1016,9 @@
           <!--<li class="nav-item">
             <a class="nav-link js-scroll-trigger" title="Team" href="#team">TEAM</a>
           <li class="nav-item">-->
-          <a class="nav-link js-scroll-trigger" title="Venue" href="#venue">VENUE</a>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" title="Venue" href="#venue">VENUE</a>
+            </li>
 
         </ul>
       </div>
@@ -1088,15 +1026,15 @@
   </nav>
 
   <section id="home">
-    <header class="masthead text-white d-flex">
+    <header class="masthead text-dark d-flex">
       <div class="container my-auto home-container">
         <div class="row">
           <div class="col-lg-12">
-              <h1 style="font-family: 'Roboto', sans-serif;">Hack by the Beach</h1>
+              <h1 class="text-dark" style="font-family: 'Roboto', sans-serif;">Hack by the Beach</h1>
           </div>
 
         <div class="col-lg-12 mt-3">
-          <p class="text-faded" style="line-height: 1.8;"><strong>Part of the Quark 2020 TechFest of BITS Goa
+          <p class="text-dark" style="line-height: 1.8;"><strong>Part of the Quark 2020 TechFest of BITS Goa
               <br>January 31 - Februrary 2, 2020 | Goa </strong>
           </p>
         </div>
@@ -1134,7 +1072,7 @@
                 });
               </script>
 
-              <p style="color:whiter"><strong>Join our <a style="color:#00ffff" href="https://join.slack.com/t/hackbythebeach/shared_invite/enQtODc2Nzg4NzA3NDI0LTY2YWI0NDU0MjBkM2NhZTNmYzZhOGM4Y2FjNDllMGZmNGRlMmQwZTc3YzI5Yjc3Y2YyNDhhNTRiNTM2MjQ3ZjE">slack group!</a></strong></p>
+              <p class="text-dark"><strong>Join our <a class="text-info" href="https://join.slack.com/t/hackbythebeach/shared_invite/enQtODc2Nzg4NzA3NDI0LTY2YWI0NDU0MjBkM2NhZTNmYzZhOGM4Y2FjNDllMGZmNGRlMmQwZTc3YzI5Yjc3Y2YyNDhhNTRiNTM2MjQ3ZjE">slack group!</a></strong></p>
             </div>
           </div>
         </div>
@@ -1147,7 +1085,7 @@
     <div class="container" style="margin-bottom:30px">
       <div class="row">
         <div class="col-lg-8 mx-auto text-center">
-          <h2 class="section-heading text-white" style="font-family: 'Staatliches'; font-size:70px; padding:40px;">About</h2>
+          <h2 class="section-heading text-dark" style="font-family: 'Staatliches'; font-size:70px; padding:40px;">About</h2>
           <p style="font-size:23px; font-family: 'Montserrat', sans-serif">Hack by the Beach is the annual hackathon organized
             by BITS Pilani Goa. Our mission
             is to bring the community together to creat innovative solutions to novel problems. We want to creat a
@@ -1159,78 +1097,127 @@
       </div>
     </div>
   </section>
-
+<!-- TECHNOLOGIES IN FOCUS -->
   <section id="speakers">
-    <div class="content" style="font-family: 'Staatliches'">Technologies in focus</div>
+    <div class="content text-dark" style="font-family: 'Staatliches'">Technologies in focus</div>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="AI" style="text-align:center">
+            <button class="tech-btn" onclick="button1()"><img class="tech-img" style="border-radius:20px" src="./img/track-ai.png"></button>
+            <p style="font-size:21px; font-family: 'Encode Sans Semi Expanded'">AI</p>
+            <script type="text/javascript">
+              function button1() {
+                swal('Artificial Intelligence',
+                  'From bots, to personal assistants, and shopping automation, what the future holds for artificial intelligence can be described for sure with at least one word; Exciting. Our machines and devices are getting faster, more efficient and slowly learning to do things on their own.'
+                );
+              }
+            </script>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="Blockchain" style="text-align:center">
+            <button class="tech-btn" onclick="button2()"><img class="tech-img" src="./img/track-blockchain.png"></button>
+            <p style="font-size:21px; font-family: 'Encode Sans Semi Expanded'">Blockchain</p>
+            <script type="text/javascript">
+              function button2() {
+                swal('Blockchain',
+                  'Today, most exciting use cases for blockchain technology extend far beyond payments and digital currency. With the advent of smart contracts and turing-complete frameworks, blockchain technology has evolved far beyond just bitcoins. It is time to join the Web 3.0 revolution!'
+                );
+              }
+            </script>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="IoT" style="text-align:center">
+            <button class="tech-btn" onclick="button3()"><img class="tech-img" style="border-radius:20px" src="./img/track-iot.png"></button>
+            <p style="font-size:21px; font-family: 'Encode Sans Semi Expanded'">IoT</p>
+            <script type="text/javascript">
+              function button3() {
+                swal('Internet of Things',
+                  'A world of devices connected by internet opens up opportunities for us that were previously unthinkable. Innovative apps can be built that can allow devices to share data and take intelligent decisions.'
+                );
+              }
+            </script>
+          </div>
+        </div>
 
-    <div class="Logos">
-      <div class="AI" style="text-align:center">
-        <button class="button1" onclick="button1()" id="AI"><img style="border-radius:20px" src="https://github.com/Rijul1999/BITSHack19/blob/master/Website/Images%20for%20website/Images/AI.jpg?raw=true"></button>
-        <p style="font-size:21px; font-family: 'Encode Sans Semi Expanded'">AI</p>
-        <script type="text/javascript">
-          function button1() {
-            swal('Artificial Intelligence',
-              'From bots, to personal assistants, and shopping automation, what the future holds for artificial intelligence can be described for sure with at least one word; Exciting. Our machines and devices are getting faster, more efficient and slowly learning to do things on their own.'
-            );
-          }
-        </script>
+        <div class="col-md-3">
+          <div class="FinTech" style="text-align:center">
+            <button class="tech-btn" onclick="button4()"><img class="tech-img" style="border-radius:20px" src="./img/track-fintech.png"></button>
+            <p style="font-size:21px; font-family: 'Encode Sans Semi Expanded'">FinTech</p>
+            <script type="text/javascript">
+              function button4() {
+                swal('FinTech',
+                  'The financial services industry is facing a wave of digital disruption that is starting to reshape the sector. This industry is currently the second-biggest target for disruption, after health care.'
+                );
+              }
+            </script>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="Algorithm" style="text-align:center">
+            <button class="tech-btn" onclick="button5()"><img class="tech-img" style="border-radius:20px" src="./img/track-algorithm.png"></button>
+            <p style="font-size:21px; font-family: 'Encode Sans Semi Expanded'">Algorithm</p>
+            <script type="text/javascript">
+              function button5() {
+                swal('Algorithm',
+                'Ever wondered why is there a price hike while we hunt for the same flight over and over? Algorithms do it for the Airlines. This concept of Algorithms has existed for centuries; from increasing your flight fares to making your work easier online, algorithms are an integral part of how computers process data. With this track, you challenge world\'s best programmers and put your coding skills at their best!'
+                );
+              }
+            </script>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="HealthTech" style="text-align:center">
+            <button class="tech-btn" onclick="button6()"><img class="tech-img" style="border-radius:20px" src="./img/track-healthtech.png"></button>
+            <p style="font-size:21px; font-family: 'Encode Sans Semi Expanded'">HealthTech</p>
+            <script type="text/javascript">
+              function button6() {
+                swal('HealthTech',
+                'None of us need to search far for a friend or family member impacted by sickness or injury. At our most vulnerable moments, we are confronted with a healthcare system woefully incapable of meeting the current demands. We are calling on all hackers and sponsors to innovate for a healthier future.'
+                );
+              }
+            </script>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="AR-VR" style="text-align:center">
+            <button class="tech-btn" onclick="button7()"><img class="tech-img" style="border-radius:20px" src="./img/track-ar-vr.png"></button>
+            <p style="font-size:21px; font-family: 'Encode Sans Semi Expanded'">AR / VR</p>
+            <script type="text/javascript">
+              function button7() {
+                swal('AR / VR',
+                'VR and AR is the extension of our minds, and is meant for those interested in building immersive, engaging experiences for real industry applications. From fashion and sports to data visualisation and engineering to education and healthcare, every sector will be impacted by the rise of VR & AR.'
+                );
+              }
+            </script>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="FutureMobility" style="text-align:center">
+            <button class="tech-btn" onclick="button8()"><img class="tech-img" style="border-radius:20px" src="./img/track-future-mobility.png"></button>
+            <p style="font-size:21px; font-family: 'Encode Sans Semi Expanded'">Future Mobility</p>
+            <script type="text/javascript">
+              function button8() {
+                swal('Future Mobility',
+                'From self driving cars to smart cities software and sensor technology is changing the way we move around. Hate traffic? We too. Hate pollution? Same. Hate finding a parking spot? Yep. Join the Future Mobility track and solve these problems.'
+                );
+              }
+            </script>
+          </div>
+        </div>
       </div>
-
-      <div class="Blockchain" style="text-align:center">
-        <button class="button2" onclick="button2()" id="BlockChain"><img src="https://github.com/Rijul1999/BITSHack19/blob/master/Website/Images%20for%20website/Images/BlockChain.jpg?raw=true"></button>
-        <p style="font-size:21px; font-family: 'Encode Sans Semi Expanded'">Blockchain</p>
-        <script type="text/javascript">
-          function button2() {
-            swal('Blockchain',
-              'Today, most exciting use cases for blockchain technology extend far beyond payments and digital currency. With the advent of smart contracts and turing-complete frameworks, blockchain technology has evolved far beyond just bitcoins. It is time to join the Web 3.0 revolution!'
-            );
-          }
-        </script>
-      </div>
-
-      <div class="IoT" style="text-align:center">
-        <button class="button3" onclick="button3()" id="IoT"><img style="border-radius:20px" src="https://github.com/Rijul1999/BITSHack19/blob/master/Website/Images%20for%20website/Images/iot.jpg?raw=true"></button>
-        <p style="font-size:21px; font-family: 'Encode Sans Semi Expanded'">IoT</p>
-        <script type="text/javascript">
-          function button3() {
-            swal('Internet of Things',
-              'A world of devices connected by internet opens up opportunities for us that were previously unthinkable. Innovative apps can be built that can allow devices to share data and take intelligent decisions.'
-            );
-          }
-        </script>
-      </div>
-
-      <div class="FinTech" style="text-align:center">
-        <button class="button4" onclick="button4()" id="FinTech"><img style="border-radius:20px" src="https://github.com/Rijul1999/BITSHack19/blob/master/Website/Images%20for%20website/Images/Fintech.jpg?raw=true"></button>
-        <p style="font-size:21px; font-family: 'Encode Sans Semi Expanded'">FinTech</p>
-        <script type="text/javascript">
-          function button4() {
-            swal('FinTech',
-              'The financial services industry is facing a wave of digital disruption that is starting to reshape the sector. This industry is currently the second-biggest target for disruption, after health care.'
-            );
-          }
-        </script>
-      </div>
-
     </div>
-
     <div class="swal-overlay" tabindex="-1">
       <div class="swal-modal" role="dialog" aria-modal="true">
-        <div class="swal-title" style="">BlockChain</div>
-        <div class="swal-text" style="">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+        <div class="swal-title" >BlockChain</div>
+        <div class="swal-text" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
           eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
           mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa</div>
         <div class="swal-footer">
           <div class="swal-button-container">
-
             <button class="swal-button swal-button--confirm">OK</button>
-
-            <div class="swal-button__loader">
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-
           </div>
         </div>
       </div>
@@ -1445,46 +1432,52 @@
     </div>
   </section>
 
-  <section id="speakersandjudges">
+  <!-- <section id="speakersandjudges">
 
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading" style="font-size:70px; font-family: 'Staatliches'">Speakers and Judges</h2>
+          <h2 class="section-heading text-dark" style="font-size:70px; font-family: 'Staatliches'">Speakers and Judges</h2>
         </div>
       </div>
     </div>
 
-    <!-- -------------------------------selected speakers part--------------------------------------------------------------- -->
-
-
-
-    <!-- -------------------------------selected speakers part--------------------------------------------------------------- -->
 
     </div>
-  </section>
+  </section> -->
 
 
 
 <!-- Insert schedule-chunk-deleted.html here -->
 
-
-  <section id="sponsors">
+<!-- SPONSORS -->
+<section id="sponsors">
+    <div class="row">
+      <div class="col-lg-10 mx-auto text-center">
+        <h2 class="mb-5 text-dark" style="font-size:70px; font-family: 'Staatliches'">Sponsors</h2>
+        <p class="mt-3" style="font-family: 'Encode Sans Semi Expanded';">
+          Interested in becoming a sponsor? Email us at
+          <a href="mailto:hackbythebeach@gmail.com" class=" text-info text-center">hackbythebeach@gmail.com</a>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 mx-auto text-center mb-4">
+        <a  href="https://devfolio.co/" target="_blank" rel="noreferrer">
+          <img src="img/devfolio-logo-2020.png" alt="devfolio logo" class="img-fluid" style="width: 480px">
+        </a>
+      </div>
+      <div class="col-12 mx-auto text-center">
+        <a  href="https://matic.network/" target="_blank" rel="noreferrer">
+          <img src="img/Matic-Network_Logo.png" alt="matic logo" class="img-fluid" style="width: 480px">
+        </a>
+      </div>
+      
+    </div>
+</section>
+  <!-- <section id="sponsors">
     <div class="container text-center">
-      <h2 class="mb-5" style="font-size:70px; font-family: 'Staatliches'">Sponsors</h2>
-
-      <!--<div class="Logos2" style="padding:20px; margin-left:200px">
-        <div class="Sponsor1" style="text-align:center">
-          <a href="https://matic.network/" target="_blank">
-		<img style="height:150px;width:auto" src="https://github.com/Rijul1999/BITSHack19/blob/master/Website/Images%20for%20website/Matic.png?raw=true">
-	  </a>
-        </div>
-
-        <div class="Sponsor2" style="text-align:center">
-          <a href="https://software.intel.com" target="_blank">
-		<img style="height:150px;width:auto" src="https://github.com/Rijul1999/BITSHack19/blob/master/Website/Images%20for%20website/Intel.png?raw=true">
-	  </a>
-        </div>-->
+      <h2 class="mb-5 text-dark" style="font-size:70px; font-family: 'Staatliches'">Sponsors</h2>
 
 	    <div class="Sponsor1" style="text-align:center">
         <a href="https://devfolio.co/"  target="_blank">
@@ -1494,28 +1487,24 @@
       <br>
       <div class="Sponsor1" style="text-align:center">
         <a href="https://matic.network/" target="_blank">
-          <img style="height:56px;width:auto;" src="./img/Matic-Network_Logo-Light.png">
+          <img style="height:56px;width:auto;" src="./img/Matic-Network_Logo.png">
         </a>
       </div>
     </div>
-      <!--<div class="row mb-5" id="sponsors-box">
-      </div>-->
-    <!-- </div> -->
-
     <div class="container text-center" style="font-family: 'Encode Sans Semi Expanded'; margin-top:30px">
       <p class="mt-2">Interested in becoming a sponsor? Email us at</p>
       <p class="mb-5">
         <a href="mailto:hackbythebeach@gmail.com" class="text-center">hackbythebeach@gmail.com</a>
       </p>
     </div>
-  </section>
+  </section> -->
 
   <section id="faq" class="faqs-box">
 
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto text-center">
-          <h2 class="mb-4" style="font-size:70px; font-family: 'Staatliches'">FAQ</h2>
+          <h2 class="mb-4 text-dark" style="font-size:70px; font-family: 'Staatliches'">FAQ</h2>
           <div id="toggle" class="toggle-panel">
             <div class="card">
               <button class="card-header collapsed" data-toggle="collapse" role="button" href="#collapse1">
@@ -1910,53 +1899,38 @@
       </div>
     </div>
   </section>
-  <!--
-<section id="team">
-	<div class="container">
-		<div class="title">
-			<h2 style="font-size:70px; color:white; text-align:center; font-family: 'Staatliches'">Team</h2>
-		</div>
-	</div>
-</section>-->
 
   <section id="venue">
     <div class="container">
       <div class="row">
         <div class="col-sm">
           <h1 style="font-size:70px; font-family: 'Staatliches'">Venue</h1>
-          <!--<img src="https://github.com/Rijul1999/BITSHack19/blob/master/Website/Images%20for%20website/bits_g_camp.jpg" class="mlr" alt="BITS Goa campus">-->
           <p style="font-family: 'Encode Sans Semi Expanded'">Birla Institute of Technology and Science, Goa Campus</p>
           <p class="text-faded mb-4" style="font-family: 'Encode Sans Semi Expanded'">NH 17B, Bypass Road, Zuarinagar,
             Sancoale, Goa 403726</p>
           <a class="btn btn-secondary" role="button" href="https://www.google.com/maps/place/BITS+Pilani+K+K+Birla+Goa+Campus/@18.7604375,72.0822333,5z/data=!4m20!1m14!4m13!1m4!2m2!1d88.3564544!2d22.4862208!4e1!1m6!1m2!1s0x3bbfb8375851666d:0x4ad5683010110240!2sBITS+Pilani+K+K+Birla+Goa+Campus,+NH+17B,+Bypass+Road,+Zuarinagar,+Sancoale,+Goa+403726!2m2!1d73.8781617!2d15.3911235!3e0!3m4!1s0x3bbfb8375851666d:0x4ad5683010110240!8m2!3d15.3911235!4d73.8781617"
             target="_blank">Get Directions</a>
         </div>
-        <!-- <div class="col-sm">
-          <div id="map"></div>
-        </div>-->
       </div>
     </div>
   </section>
 
   <section class="footer">
     <footer>
-      <div class="container" style="padding-bottom:20px;">
+      <div class="container-fluid" style="padding-bottom:20px;">
         <div class="row d-flex align-items-center">
           <div class="col-md-6 col-lg-2 text-center text-md-left footer-content">
-            <h6 class="white-text">
-              <a href="https://hackcodeofconduct.org/885-bitshack">Code of Conduct</a>
-            </h6>
+              <a style="color: black !important;" target="_blank" rel="noreferrer" href="https://hackcodeofconduct.org/885-bitshack">Code of Conduct</a>
           </div>
-          <div class="col-lg-6 circle">
-            <div id='ripple'></div>
+          <div class="col-lg-6">
           </div>
           <div class="col-md-6 col-lg-4 text-center text-md-right footer-content">
             <!--Facebook-->
-            <a href="https://www.facebook.com/bitshackgoa/" target="_blank" rel="noopener" title="BITSHack Facebook">
+            <a href="https://m.facebook.com/hackbythebeach" target="_blank" rel="noopener" title="Hack by the Beach Facebook">
               <span class="social-icons icon-facebook"> </span>
             </a>
             <!--Twitter-->
-            <a href="https://twitter.com/bitshack_goa?s=08" target="_blank" rel="noopener" title="BITSHack Twitter">
+            <a href="https://twitter.com/hackbythe?s=09" target="_blank" rel="noopener" title="Hack by the Beach Twitter">
               <span class="social-icons icon-twitter"> </span>
             </a>
             <!--Medium
@@ -1968,7 +1942,7 @@
               <span class="social-icons icon-linkedin"> </span>
             </a>-->
             <!--Instagram-->
-            <a href="https://www.instagram.com/bitshackgoa?r=nametag" target="_blank" rel="noopener" title="BITSHack Instagram">
+            <a href="https://www.instagram.com/bitshackgoa?r=nametag" target="_blank" rel="noopener" title="Hack by the Beach Instagram">
               <span class="social-icons icon-instagram"> </span>
             </a>
             <!-- Telegram
@@ -1976,8 +1950,8 @@
               <span class="social-icons icon-telegram"> </span>
             </a>-->
             <!-- Slack -->
-            <a href="https://join.slack.com/t/bitshack19/shared_invite/enQtNTE1NTg4Mjk1NzM1LWY2MTdjYjFjMDY0MDE2ZjhlNDNhZjMwNGI0OWE4ZDJmMTE5M2Y1ZWQ3NjA0MjViZjIwMDQxOTZmNjU2NzVmNTE"
-              target="_blank" rel="noopener" title="BITSHack Slack">
+            <a href="https://join.slack.com/t/hackbythebeach/shared_invite/enQtODc2Nzg4NzA3NDI0LTY2YWI0NDU0MjBkM2NhZTNmYzZhOGM4Y2FjNDllMGZmNGRlMmQwZTc3YzI5Yjc3Y2YyNDhhNTRiNTM2MjQ3ZjE"
+              target="_blank" rel="noopener" title="Hack by the Beach Slack">
               <span class="social-icons icon-slack"> </span>
             </a>
           </div>
@@ -2273,100 +2247,6 @@
   <!-- Custom scripts -->
   <script src="js/main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.13.0/bodymovin.min.js"></script>
-  <script>
-    $(document).ready(function () {
-
-      // lazy loading sponsor's images
-      const sponsorsBox =
-        `<div class="col-lg-4 col-md-6 text-center mb-5 mt-2 sponsors-logo">
-          <a href="https://www.ethereum.org/" target="_blank">
-            <img src="img/ethereum.svg" alt="Ethereum logo"></img>
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-6 text-center mb-5 ethglobal sponsors-logo">
-          <a href="https://ethglobal.co/" target="_blank">
-            <img src="img/ethglobal.svg" alt="ETHGlobal logo"></img>
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-6 text-center mb-5 sponsors-logo">
-          <a href="https://www.nucypher.com/" target="_blank">
-            <img src="img/nucypher.svg" alt="NuCypher logo"></img>
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-6 text-center mb-5 sponsors-logo">
-          <a href="https://makerdao.com/" target="_blank">
-            <img src="img/maker.svg" alt="Maker logo"></img>
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-6 text-center mb-5 sponsors-logo">
-          <a href="https://status.im/" target="_blank">
-            <img src="img/status.svg" alt="Status logo"></img>
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-6 text-center mb-5 sponsors-logo">
-          <a href="https://dharma.io/" target="_blank">
-            <img src="img/dharma.svg" alt="Dharma logo"></img>
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-6 text-center mb-5 sponsors-logo">
-          <a href="https://www.lendroid.com/" target="_blank">
-            <img src="img/lendroid.svg" alt="Lendroid logo"></img>
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-6 text-center mb-5 sponsors-logo">
-          <a href="https://ecf.network/" target="_blank">
-            <img src="img/ecf.svg" alt="ECF logo"></img>
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-6 text-center mb-5 sponsors-logo">
-          <a href="https://new.consensys.net/" target="_blank">
-            <img src="img/consensys.svg" alt="Consensys logo"></img>
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-6 text-center mb-5 sponsors-logo">
-          <a href="https://gitcoin.co/" target="_blank">
-            <img src="img/gitcoin.svg" alt="Gitcoin logo"></img>
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-6 text-center mb-5 sponsors-logo">
-          <a href="https://matic.network/" target="_blank">
-            <img src="img/matic-network.svg" alt="Matic Network logo"></img>
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-6 text-center mb-5 sponsors-logo">
-          <a href="https://quantstamp.com/" target="_blank">
-            <img src="img/quantstamp.svg" alt="Quantstamp logo"></img>
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-6 text-center mb-5 sponsors-logo">
-          <a href="https://web3.foundation/" target="_blank">
-            <img src="img/web3.svg" alt="Web3 logo" id="web3img"></img>
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-6 text-center mb-5 sponsors-logo">
-          <a href="https://bounties.network/" target="_blank">
-            <img src="img/bounties-network.svg" alt="Bounties Network logo"></img>
-          </a>
-        </div>
-
-        `;
-
-      $("#sponsors-box").html(sponsorsBox);
-    });
-
-
-
-    // Register the service worker
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js').then(function (registration) {
-        // Registration was successful
-        console.log('ServiceWorker registration successful with scope: ', registration.scope);
-      }).catch(function (err) {
-        // registration failed :(
-        console.log('ServiceWorker registration failed: ', err);
-      });
-    }
-  </script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA06IMZ1lEx9XrzTDcLPALTeojJAl0UY5k&callback=initMap"
     async defer></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
