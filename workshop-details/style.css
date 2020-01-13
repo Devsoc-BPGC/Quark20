@@ -1,0 +1,26 @@
+body{
+    background-color: black;
+}
+img{
+    max-height: 300px;
+    max-width: 300px;
+}
+.card{
+    max-width: 1000px;
+}
+
+.btn-outline-primary{
+    border-color: #298fca;
+    color: #298fca;
+    border-radius: 16px;
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:focus,
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active{
+    background-color: #298fca;
+    color: black;
+    border-radius: 16px;
+    border-color: #298fca;
+}
